@@ -1,0 +1,59 @@
+{
+  "name": "netsight-web-api",
+  "version": "1.0.0",
+  "adonis-version": "4.1.0",
+  "description": "Netsight Web API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node ace test --timeout 60000",
+    "dev": "DEBUG=middleware:*,-not_this node server.js",
+    "dev-win": "set DEBUG=middleware:*,-not_this & node server.js"
+  },
+  "keywords": [
+    "adonisjs",
+    "adonis-app"
+  ],
+  "author": "Immobisp",
+  "license": "MIT LICENSED",
+  "private": true,
+  "dependencies": {
+    "@adonisjs/ace": "^5.0.8",
+    "@adonisjs/auth": "^3.1.0",
+    "@adonisjs/bodyparser": "^2.0.9",
+    "@adonisjs/cors": "^1.0.7",
+    "@adonisjs/drive": "^1.0.4",
+    "@adonisjs/fold": "^4.0.9",
+    "@adonisjs/framework": "^5.0.13",
+    "@adonisjs/ignitor": "^2.0.8",
+    "@adonisjs/lucid": "^6.1.3",
+    "@adonisjs/redis": "^2.0.7",
+    "@adonisjs/session": "^1.0.29",
+    "@adonisjs/shield": "^1.0.8",
+    "@adonisjs/validator": "^5.1.0",
+    "@adonisjs/vow": "^1.0.17",
+    "@verdigris/adonis-compression": "^1.0.0",
+    "adonis-cache": "^0.3.4",
+    "adonis-scheduler": "^3.0.2",
+    "axios": "^0.26.1",
+    "child_process": "^1.0.2",
+    "convert-excel-to-json": "^1.7.0",
+    "crypto-js": "^4.1.1",
+    "csvtojson": "^2.0.10",
+    "inflection": "^1.13.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "nodemailer": "^6.4.6",
+    "object-hash": "^2.2.0",
+    "pg": "^8.3.0",
+    "telegraf": "^4.8.5",
+    "uuid": "^8.3.2",
+    "write": "^2.0.0"
+  },
+  "devDependencies": {
+    "pm2": "^5.2.0"
+  },
+  "autoload": {
+    "App": "./app"
+  }
+}

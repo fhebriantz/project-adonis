@@ -1,0 +1,8 @@
+{
+  "apps" : [{
+    "name": "netsight-web-api",
+    "script": "server.js",
+    "exec_mode": "cluster",
+    "instances": 1
+  }]
+}
